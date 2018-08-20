@@ -9,9 +9,9 @@ To play safe, you need to run a long procedure. And Stay Alarmed! The whole proc
 
 How about we do it from Jenkins? Kind of VisualOps.
 
-![First Post](/images/2018-08-20_11-42-47.png)
+![exampe01](/images/2018-08-20_11-42-47.png)
 
-#### 1.Why Need To Restart?
+#### Why Need To Restart?
 
 Instead of how, we definitely need to ask why first.
 
@@ -20,4 +20,15 @@ Some ES instances may run into Full GC. Either because of low free RAM, or huge 
 What’s worse. When it’s the master node, the whole cluster will freeze.
 
 If it keeps being this, we have to restart instances. Then ES cluster will recover.
-[updating]
+
+Command to check full gc count for all ES nodes:
+```
+curl "http://$es_ip:$es_port/_nodes/stats" | \
+  jq '[ .nodes | to_entries | sort_by(.value.jvm.gc.collectors.old.collection_count) | .[] | { node: .value.name, full_gc_count: .value.jvm.gc.collectors.old.collection_count } ]'
+```
+
+Python way to check full gc count: **[GitHub](https://gist.github.com/naviat/877238284c79b6512e3bbd91d2c54439)**
+
+### What Are The Painpoints?
+
+* Time-consuming. It’s not a simple command. See official ES restart procedure: ![here](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/restart-upgrade.html)
