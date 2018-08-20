@@ -72,6 +72,7 @@ e.g. You may experience some other surprise(s) during this period.
 As a DevOps professional, you know the pain with this approach. Right?
 Try to restart it at midnight. And 3-5 times every week.
 ```
+
 ### How Jenkins Can Help?
 If we can have a mature Jenkins job, it would be much better.
 
@@ -91,6 +92,7 @@ Here are improvements I have made. I admit, they don’t root-fix the problems.
 (Please leave me comments, if you have better suggestions).
 
 * **Safe-protection**: Before Jenkins make any change, check ES status
+
 ```
 If ES is not green, refuse to run. And send out alerts
 Restarting instances with ES is yellow or red, it's super dangerous.
@@ -99,6 +101,7 @@ If ES is too slow to respond, refuse to run.
 Restarting would bring even more load to the current cluster.
 So it's better we ask human intervene.
 ```
+
 * **Add 2 retries**: this would be helpful when we try to change shard allocations.
 * **Ignore errors of synced flushed**. This HTTP request will always run into ```HTTP/1.1 409 Conflict.```
 
