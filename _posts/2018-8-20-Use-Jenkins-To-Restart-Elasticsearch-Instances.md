@@ -31,7 +31,7 @@ Python way to check full gc count: **[GitHub](https://gist.github.com/naviat/877
 
 ### What Are The Painpoints?
 
-* **Time-consuming**. It’s not a simple command. See official ES restart procedure: [here](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/restart-upgrade.html)
+1. **Time-consuming**. It’s not a simple command. See official ES restart procedure: [here](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/restart-upgrade.html)
 
 ```
 First you need to run a flushed sync. 
@@ -45,6 +45,7 @@ e.g, restarting node with 1TB data might take more than 4 hours.
 ```
 
 * **Error-prone**. The official procedure looks quite straightforward. But…
+
 ```
 You try to run flushed sync before start. 
 But the request has just hang for more than 5 minutes. What will you do?
@@ -59,6 +60,7 @@ Still feel comfortable with the mission ahead of you?
 ```
 
 * **Dangerous**. ES cluster will turn yellow for a while, even after we have finished the instance restart.
+
 ```
 ES cluster would be loading the shards of that instance.
 
@@ -68,17 +70,22 @@ e.g. You may experience some other surprise(s) during this period.
 ```
 
 * **Human Intervene**. It’s safer if we can do it manually, apparently this doesn’t scale.
+
 ```
 As a DevOps professional, you know the pain with this approach. Right?
 Try to restart it at midnight. And 3-5 times every week.
 ```
 
 ### How Jenkins Can Help?
+
 If we can have a mature Jenkins job, it would be much better.
 
 Not only you(DevOps) can issue the restart, but also the Developers!
+
 The running history and error messages can be easily tracked
+
 No need to check for each step and wait for ES turn green. Jenkins can send us notifications.
+
 This definitely looks better. Right?
 
 ### Key Considerations Of Jenkins Approach
@@ -103,6 +110,7 @@ So it's better we ask human intervene.
 ```
 
 * **Add 2 retries**: this would be helpful when we try to change shard allocations.
+
 * **Ignore errors of synced flushed**. This HTTP request will always run into ```HTTP/1.1 409 Conflict.```
 
 **Here comes the solution in [GitHub!](https://gist.github.com/naviat/f9767d78cf3d84613b5f758ff7be6a0f)** 
