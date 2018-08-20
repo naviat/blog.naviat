@@ -31,4 +31,15 @@ Python way to check full gc count: **[GitHub](https://gist.github.com/naviat/877
 
 ### What Are The Painpoints?
 
-* Time-consuming. It’s not a simple command. See official ES restart procedure: ![here](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/restart-upgrade.html)
+* Time-consuming. It’s not a simple command. See official ES restart procedure: [here](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/restart-upgrade.html)
+
+```
+First you need to run a flushed sync. 
+Thus we reduce version conflict, after restart.
+
+Temporarily disable shard allocations.
+This helps avoid unnecessary shards rebalancing.
+
+Rebalancing huge data will take hours. 
+e.g, restarting node with 1TB data might take more than 4 hours.
+```
