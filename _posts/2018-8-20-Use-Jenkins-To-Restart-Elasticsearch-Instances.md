@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: Jenkins
 title: Use Jenkins To Restart Elasticsearch Instances!
 ---
 Ever need to restart ES instances for a critical ES cluster?
