@@ -3,5 +3,6 @@ layout: post
 tags: Python
 title: Python Workbook - One day one Exercise - 01 - Mailing Address
 ---
+Mailing Address
 
-**Problem**: Create a program that displays your name and complete mailing address formatted in the manner that you would usually see it on the outside of an envelope. Your program does not need to read any input from the user.
+### **Problem**: Create a program that displays your name and complete mailing address formatted in the manner that you would usually see it on the outside of an envelope. Your program does not need to read any input from the user.
