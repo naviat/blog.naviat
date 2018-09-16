@@ -4,7 +4,7 @@ tags: Redis
 title: How to setup Redis master and slave replication
 ---
 ### How to setup Redis master and slave replication
-### PURPOSE
+#### PURPOSE
 It's very simple to setup a master-slave Redis replication that allows the slave Redis server to keep an exact backup copy of a master server database. For more details on Redis replication, refer here. 
 
 For this demo, we have two Redis instances running the same Ubuntu 14.0.4 host, and we are going to configure redis_6379 server as a master and redis_6380 server as a slave. If you don't have Redis servers install yet, see How to setup and run multiple Redis server instances on a Linux host.
@@ -19,8 +19,9 @@ For this demo, we have two Redis instances running the same Ubuntu 14.0.4 host, 
 /etc/redis/redis_6380.conf configuration file
 /etc/init.d/redis_6380 service script
 ```
-### CAUSE
-### PROCEDURE
+#### CAUSE
+
+#### PROCEDURE
 
 ##### 1)  Add the following lines
 ```
@@ -40,7 +41,7 @@ requirepass mypass
 /etc/init.d/redis_6379 stop/start
 /etc/init.d/redis_6380 stop/start
 ```
-###                                                        OR
+####                                                        OR
 
 You can use redis-cli with config set masterauth/requirepass and SLAVEOF commands without restarting
 
