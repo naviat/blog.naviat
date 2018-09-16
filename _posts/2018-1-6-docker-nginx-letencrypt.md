@@ -1,5 +1,5 @@
 ---
-layout: docker
+layout: post
 tags: Docker, crypto
 title: Docker + Nginx + LetsEncrypt
 ---
