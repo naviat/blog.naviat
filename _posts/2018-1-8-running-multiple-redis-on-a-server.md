@@ -5,34 +5,34 @@ title: How to setup and run multiple Redis server instances on a Linux host
 ---
 ### How to setup and run multiple Redis server instances on a Linux host
 
-### Environment
+#### Environment
 
 Redis
 
 Linux
 
-### Purpose
+#### Purpose
 
 Users can easily setup and run multiple Redis instances on the same Linux host. We have a Redis instance running on Ubuntu 14.04, and we want to setup a second Redis instance. 
 
-#### 1.  Existing Redis Server1 instance running on port 6379 using
+##### 1.  Existing Redis Server1 instance running on port 6379 using
 
 ```
 /etc/redis/redis_6379.conf configuration file 
 /etc/init.d/redis_6379 script
 ```
-#### 2.  Create a new (2nd) Redis Server2 instance running on port 6380 using
+##### 2.  Create a new (2nd) Redis Server2 instance running on port 6380 using
 ```
 /etc/redis/redis_6380.conf configuration file
 /etc/init.d/redis_6380 script 
 ```
-### Instructions
+#### Instructions
 
-##### 1)  Setup a second Redis instance configuration file
+###### 1)  Setup a second Redis instance configuration file
 ```
 cp /etc/redis/redis_6379.conf /etc/redis/redis_6380.conf
 ```
-##### 2)  Change the following lines in /etc/redis/redis_6380.conf
+###### 2)  Change the following lines in /etc/redis/redis_6380.conf
 ```
 pidfile /var/run/redis_6379.pid
 port 6379
@@ -46,11 +46,11 @@ port 6380
 logfile /var/log/redis/redis_6380.log
 dir /var/lib/redis/6380
 ```
-##### 3)  Create a second Redis instance working directory
+###### 3)  Create a second Redis instance working directory
 ```
 mkdir /var/lib/redis/6380
 ```
-##### 4) Change the following line in /etc/init.d/redis_6379 
+###### 4) Change the following line in /etc/init.d/redis_6379 
 ```
 > EXEC=/usr/local/bin/redis-server        (no change here)
 CLIEXEC=/usr/local/bin/redis-cli         (no change here)
@@ -67,11 +67,11 @@ PIDFILE=/var/run/${NAME}.pid
 CONF="/etc/redis/${NAME}.conf"
 REDISPORT="${NAME#*_}"
 ```
-##### 5) Create a symlink script for the second server instance
+###### 5) Create a symlink script for the second server instance
 ```
 ln -s /etc/init.d/redis_6379 /etc/init.d/redis_6380
 ```
-##### 6) Now we can start up and use both server instances
+###### 6) Now we can start up and use both server instances
 ```
 /etc/init.d/redis_6379 start
 /etc/init.d/redis_6380 start
