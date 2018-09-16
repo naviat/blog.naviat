@@ -15,11 +15,11 @@ Here are quick tips I found useful to deploy such applications.
 
 ### Technologies used:
 
-### 1. Docker
-### 1. Docker Compose
-### 1. Docker Machine
-### 1. Nginx
-### 1. LetsEncrypt (with tool called certbot)
+### -  Docker
+### -  Docker Compose
+### -  Docker Machine
+### -  Nginx
+### -  LetsEncrypt (with tool called certbot)
 
 Docker Compose is extremely useful to help manage the complexity of the application’s moving pieces. In case you did not use it before, here is my 2 second pitch. Docker Compose allows to define all of the components in a single configuration therefore allowing for easier maintenance and deployment.
 For most use-cases the public-facing component of the application will probably be a reverse proxy. Nginx is one of the most popular reverse proxy servers out there. It is really reliable and lightweight. It often uses <5Mb memory. I’m not sure you can ask for more.
