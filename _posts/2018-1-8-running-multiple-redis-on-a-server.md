@@ -3,7 +3,7 @@ layout: post
 tags: Redis
 title: How to setup and run multiple Redis server instances on a Linux host
 ---
-## How to setup and run multiple Redis server instances on a Linux host
+### How to setup and run multiple Redis server instances on a Linux host
 
 ### Environment
 
