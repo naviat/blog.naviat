@@ -3,7 +3,7 @@ layout: post
 tags: Redis
 title: How to setup Redis master and slave replication
 ---
-# How to setup Redis master and slave replication
+### How to setup Redis master and slave replication
 ### PURPOSE
 It's very simple to setup a master-slave Redis replication that allows the slave Redis server to keep an exact backup copy of a master server database. For more details on Redis replication, refer here. 
 
