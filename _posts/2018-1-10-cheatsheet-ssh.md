@@ -1,3 +1,8 @@
+---
+layout: post
+tags: ssh
+title: SSH Cheatsheet
+---
 ### 1.1 SSH general
 
 ##### - Install ssh server	
