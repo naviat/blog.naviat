@@ -61,7 +61,7 @@ In the meantime, you’ll need to choose between running your mobile CI in-house
 - Troubleshooting Xcode/code signing issues is difficult.
 - Depending on the platform and team practices, monthly fees can become expensive over time.
 #### What we’re doing
-![fastlane-overview](https://github.com/naviat/naviat.github.io/blob/master/images/fastlane.png)
+![fastlane-overview](https://github.com/naviat/naviat.github.io/blob/master/images/fastlane.png "Flow")
 1. When a developer opens a PR, CircleCI will automatically build the iOS project.
 1. CircleCI will automatically install code signing certificates and provisioning profiles into a local keychain (configured using the setup_circle_ci action). For more information on fastlane and code signing, see the match action documentation and read more about the approach here.
 1. fastlane runs SwiftLint, runs unit tests, and generates code coverage reports.
