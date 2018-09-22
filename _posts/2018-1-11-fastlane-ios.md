@@ -3,7 +3,7 @@ layout: post
 tags: ios fastlane
 title: Easy CI with fastlane - How we automated everything iOS from running tests to distributing a build
 ---
-### Easy CI with fastlane: How we automated everything iOS from running tests to distributing a build
+Easy CI with fastlane: How we automated everything iOS from running tests to distributing a build
 
 #### Where We Were
 Developers ran unit tests locally.
