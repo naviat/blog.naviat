@@ -16,4 +16,4 @@ a Student DB management system made with PyQT and SQLite3 with features like
 adding student details and semester fee payment details and getting records of the 
 same associating a roll number. 
 
-You can view the source code in my GitHub Repository
+You can view the source code in my [GitHub Repository](https://github.com/naviat/student-tho)

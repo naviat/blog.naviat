@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e312195c-ff0c-40de-aa3d-5db1a058fa0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2018-1-20-Python-Student-DB-Management-System.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-1-20-Python-Student-DB-Management-System.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-1-20-Python-Student-DB-Management-System.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-1-20-Python-Student-DB-Management-System.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="15" column="72" lean-forward="true" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+              <first_editor relative-caret-position="414">
+                <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
               </first_editor>
               <second_editor />
             </state>
@@ -32,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-1-11-fastlane-ios.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="161">
-                <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <first_editor relative-caret-position="-1103">
+                <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -113,12 +112,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554219142958</updated>
-      <workItem from="1554219145884" duration="202000" />
+      <workItem from="1554219145884" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202000" />
+    <option name="totallyTimeSpent" value="658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1641" height="1027" extended-state="0" />
@@ -129,7 +128,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3297062" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -147,11 +146,19 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-1-10-cheatsheet-ssh.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1172" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-1-11-fastlane-ios.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="161">
-            <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <first_editor relative-caret-position="-1103">
+            <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
@@ -160,8 +167,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-1-20-Python-Student-DB-Management-System.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="72" lean-forward="true" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <first_editor relative-caret-position="414">
+            <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
           </first_editor>
           <second_editor />
         </state>
