@@ -66,7 +66,7 @@ chain := MiddlewareHandlerFunc(HomeRouter).
 mux.Path("/home").HandlerFunc(http.HandlerFunc(chain))
 ```
 
-Casting <span style="color:red"> http.HandlerFunc </span> to <span style="color:red"> MiddlewareHandlerFunc </span>, and then calling <span style="color:red"> Intercept </span> method to install our interceptor. The return type of Intercept is again a <span style="color:red"> MiddlewareHandlerFunc </span>, which allows us to call <span style="color:red"> Intercept </span> again.
+Casting <span style="color:red"> http.HandlerFunc </span> to <span style="color:red"> MiddlewareHandlerFunc </span>, and then calling <span style="color:red"> Intercept </span> method to install our interceptor. The return type of <span style="color:red"> Intercept </span> is again a <span style="color:red"> MiddlewareHandlerFunc </span>, which allows us to call <span style="color:red"> Intercept </span> again.
 
 One important thing to note with <span style="color:red"> Intercept </span> scheme is the order of execution. Since calling <span style="color:red"> chain(responseWriter, request) </span> is indirectly invoking last interceptor, the execution of interceptors is reversed i.e. it goes from interceptor at tail all the way back to handler at head. Which makes perfect sense because you are intercepting the call; so you should get a chance to execute before your parent.
 
