@@ -6,7 +6,7 @@
 name: Hai Dam
 
 # Short bio or description (displayed in the header)
-description: DEV, OPS AND DEVOPS.
+description: DEV, OPS AND DEVOPS/SRE.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/13325589?s=400
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: naviat
   instagram:
-  linkedin:
+  linkedin: haidv
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: haidv_ict
